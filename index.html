@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>С Днём Рождения, Настя!</title>
+    <style>
+        body {
+            background-color: #ffccff;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            color: #ff0000;
+            font-size: 60px;
+        }
+        h2 {
+            color: #0000ff;
+        }
+        p {
+            color: #008000;
+            font-size: 24px;
+        }
+        marquee {
+            font-size: 28px;
+            color: #ff6600;
+        }
+        .color-text {
+            font-size: 30px;
+            font-weight: bold;
+            animation: colorchange 2s infinite;
+        }
+        .balloons {
+            position: absolute;
+            width: 50px;
+            animation: float 5s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-200px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes colorchange {
+            0% { color: red; }
+            20% { color: orange; }
+            40% { color: yellow; }
+            60% { color: green; }
+            80% { color: blue; }
+            100% { color: purple; }
+        }
+        .corner-text {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 С Днём Рождения, Настя! 🎉</h1>
+    <marquee behavior="alternate" direction="left">🌟 Пусть сбудутся все твои мечты! 🌟</marquee>
+    <h2>Ты самая лучшая! 💖</h2>
+    <p>Желаем счастья, здоровья и улыбок каждый день!</p>
+
+    <div class="color-text">🌈 Радужного настроения! 🌈</div>
+    <div class="color-text">🍰 Самого вкусного торта! 🍰</div>
+
+    <marquee behavior="scroll" direction="right">💖 Любви, смеха и приключений! 💖</marquee>
+    <marquee behavior="scroll" direction="left">🎈 Настя, ты супер! 🎈</marquee>
+
+    <!-- Шарики -->
+    <img src="https://i.postimg.cc/K8dQ3K7Z/balloon1.png" class="balloons" style="left:10%;">
+    <img src="https://i.postimg.cc/7YxjY6Z2/balloon2.png" class="balloons" style="left:50%;">
+    <img src="https://i.postimg.cc/2jYtYxHq/balloon3.png" class="balloons" style="left:80%;">
+
+    <!-- Надписи в углах -->
+    <div class="corner-text" style="top:0; left:0; color:#ff0000;">🎉 Party Time! 🎉</div>
+    <div class="corner-text" style="top:0; right:0; color:#00ff00;">💫 Веселья море! 💫</div>
+    <div class="corner-text" style="bottom:0; left:0; color:#0000ff;">🍭 Сладостей! 🍭</div>
+    <div class="corner-text" style="bottom:0; right:0; color:#ff00ff;">🎊 Радости! 🎊</div>
+</body>
+</html>
